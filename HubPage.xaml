@@ -1,0 +1,105 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="trustudy_2014.HubPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:trustudy_2014"
+    xmlns:data="using:trustudy_2014.Data"
+    xmlns:common="using:trustudy_2014.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#FF953735">
+
+    <Page.Resources>
+        <!-- Plantilla de elemento de cuadrícula de 310 x 260 píxeles, tal como aparece en la sección 4 -->
+        <DataTemplate x:Key="Standard310x260ItemTemplate">
+            <Grid Height="250" Width="310" Margin="5,10,5,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Height="150">
+                    <Image Source="{Binding ImagePath}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+                </Border>
+                <StackPanel Grid.Row="1" Margin="0,10,0,0">
+                    <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" MaxHeight="60" />
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <!--
+    Esta cuadrícula actúa como panel raíz de la página.
+  -->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="195*"/>
+        </Grid.RowDefinitions>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Hub SectionHeaderClick="Hub_SectionHeaderClick" Grid.RowSpan="2" RequestedTheme="Light">
+            <Hub.Header>
+                <!-- Botón Atrás y título de página -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button  x:Name="backButton" Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        Margin="-1,-1,39,0" 
+                        VerticalAlignment="Top"
+                        Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+                    <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="35" Margin="45,0,-166,0" VerticalAlignment="Top" Width="200" Source="Assets/logo.jpg" Stretch="Fill" IsHitTestVisible="False"/>
+                </Grid>
+            </Hub.Header>
+            <HubSection Width="780" Margin="0,0,80,0">
+            </HubSection>
+            <HubSection IsHeaderInteractive="True" DataContext="{Binding Section3Items}" d:DataContext="{Binding Groups[3], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+                        x:Uid="Section3Header" Header="Apuntes" Padding="40,40,40,32">
+                <DataTemplate>
+                    <GridView
+                        x:Name="itemGridView"
+                        ItemsSource="{Binding Items}"
+                        Margin="-9,-14,0,0"
+                        AutomationProperties.AutomationId="ItemGridView"
+                        AutomationProperties.Name="Items In Group"
+                        ItemTemplate="{StaticResource Standard310x260ItemTemplate}"
+                        SelectionMode="None"
+                        IsSwipeEnabled="false"
+                        IsItemClickEnabled="True"
+                        ItemClick="ItemView_ItemClick">
+                    </GridView>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Width="500" x:Uid="Section1Header" Header="Blog">
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="Assets/CAMPUS1450.jpg" Stretch="Fill" Width="420" Height="280"/>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1" Margin="0,10,0,0" TextWrapping="Wrap"  
+                                   x:Uid="Section1Subtitle" Text="Tips para el aprendizaje visual espacial"/>
+                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Grid.Row="2" Margin="0,10,0,0" 
+                                   x:Uid="DescriptionHeader" Text=""/>
+                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3"
+                                   x:Uid="Section1DescriptionText" Text="El aprender, para los estudiantes visuales-espaciales, se lleva a cabo de un solo tirón, con grandes trozos de información comprendidas intuitivamente de a saltos, en lugar de una gradual acumulación de hechos aislados, pequeños pasos o hábitos estructurados ganados a través de la práctica. Por ejemplo, ellos pueden aprender todo acerca de los pasos de la multiplicación, como un juego relacionado en una tabla mucho más fácil y rápido que memorizando cada paso independientemente."/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+
+        </Hub>
+    </Grid>
+</Page>

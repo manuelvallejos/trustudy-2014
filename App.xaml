@@ -1,0 +1,16 @@
+﻿<Application
+    x:Class="trustudy_2014.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:trustudy_2014"
+    xmlns:localData="using:trustudy_2014.Data">
+
+    <Application.RequestedTheme>light</Application.RequestedTheme>
+        
+    <Application.Resources>
+        <!-- Recursos específicos de la aplicación -->
+
+        <x:String x:Key="AppName">TRUSTUDY</x:String>
+
+    </Application.Resources>
+</Application>

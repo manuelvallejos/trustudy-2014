@@ -35,8 +35,8 @@
   -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="61*"/>
-            <RowDefinition Height="195*"/>
+            <RowDefinition Height="183"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -48,20 +48,43 @@
                 <!-- Botón Atrás y título de página -->
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="10"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Button  x:Name="backButton" Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        Margin="-1,-1,39,0" 
+                        Margin="-1,-1,30,0" 
                         VerticalAlignment="Top"
                         Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
-                    <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="35" Margin="45,0,-166,0" VerticalAlignment="Top" Width="200" Source="Assets/logo.jpg" Stretch="Fill" IsHitTestVisible="False"/>
+                        AutomationProperties.ItemType="Navigation Button" HorizontalAlignment="Stretch"/>
+                    <Image Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="35" Margin="45,0,-165,0" VerticalAlignment="Top" Width="200" Source="Assets/logo.jpg" Stretch="Fill" IsHitTestVisible="False"/>
                 </Grid>
             </Hub.Header>
-            <HubSection Width="780" Margin="0,0,80,0">
+            <HubSection Width="700" Header="Perfil de aprendizaje">
+                <DataTemplate>
+                    <Grid Width="625">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="500"/>
+                        </Grid.RowDefinitions>
+                        <Image HorizontalAlignment="Left" Height="100" Margin="60,87,0,0" VerticalAlignment="Top" Width="100" Source="Assets/photo.jpg" RenderTransformOrigin="0.3,0.55"/>
+                        <Image HorizontalAlignment="Left" Margin="372,52,0,0" VerticalAlignment="Top" Source="Assets/auditivo.png" Width="76" Height="76"/>
+                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="448,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Image HorizontalAlignment="Left" Margin="448,52,0,0" VerticalAlignment="Top" Source="Assets/visual.png" Width="76" Height="76" RequestedTheme="Light"/>
+                        <Image HorizontalAlignment="Left" Margin="524,55,0,0" VerticalAlignment="Top" Source="Assets/kinestesico.png" Width="76" Height="76"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="372,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="524,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="60,55,0,0" TextWrapping="Wrap" Text="Manuel " VerticalAlignment="Top" Height="27" Width="100" FontSize="20" TextAlignment="Center"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="190,55,0,0" TextWrapping="Wrap" Text="Según nuestros últimos registros tu estilo de aprendizaje es" VerticalAlignment="Top" Height="107" Width="150" FontSize="20" TextAlignment="Justify" Foreground="#B2000000"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="453,133,0,0" TextWrapping="Wrap" Text="Visual" VerticalAlignment="Top" Height="27" Width="71" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
+                        <Image HorizontalAlignment="Left" Margin="372,160,0,0" VerticalAlignment="Top" Source="Assets/sistematico.png" Width="76" Height="76"/>
+                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="448,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Image HorizontalAlignment="Left" Margin="448,161,0,0" VerticalAlignment="Top" Source="Assets/creativo.png" Width="76" Height="76" RequestedTheme="Light" Stretch="Fill"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="372,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="448,239,0,0" TextWrapping="Wrap" Text="Creativo" VerticalAlignment="Top" Height="27" Width="76" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
+                    </Grid>
+                </DataTemplate>
             </HubSection>
             <HubSection IsHeaderInteractive="True" DataContext="{Binding Section3Items}" d:DataContext="{Binding Groups[3], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
                         x:Uid="Section3Header" Header="Apuntes" Padding="40,40,40,32">
@@ -80,7 +103,7 @@
                     </GridView>
                 </DataTemplate>
             </HubSection>
-            <HubSection Width="500" x:Uid="Section1Header" Header="Blog">
+            <HubSection Width="500" x:Uid="Section1Header" Header="Blog" Background="#FF953735">
                 <DataTemplate>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -101,5 +124,7 @@
             </HubSection>
 
         </Hub>
+        <TextBox x:Name="buscar" HorizontalAlignment="Left" Margin="1072,63,0,0" TextWrapping="Wrap" Text="Especifica un curso o autor" VerticalAlignment="Top" Width="248" Tapped="TextBox_Tapped"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="1270,53,0,0" VerticalAlignment="Top" Width="50" Source="Assets/buscar.png"/>
     </Grid>
 </Page>

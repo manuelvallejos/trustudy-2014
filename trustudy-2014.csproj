@@ -128,16 +128,25 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Assets\buscar.png" />
+    <Content Include="Assets\creativo.png" />
+    <Content Include="Assets\sistematico.png" />
+    <Content Include="Assets\kinestesico.png" />
+    <Content Include="Assets\visual.png" />
+    <Content Include="Assets\auditivo.png" />
     <Content Include="Assets\calculo.jpg" />
     <Content Include="Assets\CAMPUS1450.jpg" />
+    <Content Include="Assets\cerebro.png" />
     <Content Include="Assets\computacion.jpg" />
     <Content Include="Assets\ecuaciones.jpg" />
     <Content Include="Assets\electromagnetismo.jpg" />
     <Content Include="Assets\filosofia.jpg" />
     <Content Include="Assets\logo.jpg" />
+    <Content Include="Assets\photo.jpg" />
     <Content Include="Assets\probabilidades.jpg" />
     <Content Include="Assets\resumen-fotografia.png" />
     <Content Include="Assets\Square150x150Logo.scale-180.png" />
+    <Content Include="Assets\StoreLogo.scale-180.png" />
     <Content Include="Assets\variable-aleatoria.png" />
     <Content Include="HubPage.xml" />
     <None Include="Common\ReadMe.txt" />

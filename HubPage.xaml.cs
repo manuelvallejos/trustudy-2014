@@ -116,5 +116,12 @@ namespace trustudy_2014
         }
 
         #endregion
+
+        private void TextBox_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            
+        }
+
+
     }
 }

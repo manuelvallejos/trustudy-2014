@@ -121,25 +121,25 @@
     <value>Perfil: Visual</value>
   </data>
   <data name="Group1Subtitle" xml:space="preserve">
-    <value>Subtítulo de grupo: 1</value>
+    <value />
   </data>
   <data name="Group1Title" xml:space="preserve">
     <value>Tìtulo del grupo: 1</value>
   </data>
   <data name="Group2Subtitle" xml:space="preserve">
-    <value>Subtítulo de grupo: 2</value>
+    <value />
   </data>
   <data name="Group2Title" xml:space="preserve">
     <value>Tìtulo del grupo: 2</value>
   </data>
   <data name="Group3Subtitle" xml:space="preserve">
-    <value>Subtítulo de grupo: 3</value>
+    <value />
   </data>
   <data name="Group3Title" xml:space="preserve">
     <value>Tìtulo del grupo: 3</value>
   </data>
   <data name="Group4Subtitle" xml:space="preserve">
-    <value>Subtítulo de grupo: 4</value>
+    <value />
   </data>
   <data name="Group4Title" xml:space="preserve">
     <value>Título de grupo: 4</value>
@@ -157,7 +157,7 @@
     <value>Título de grupo: 6</value>
   </data>
   <data name="GroupDescription" xml:space="preserve">
-    <value>Descripción del grupo: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante</value>
+    <value />
   </data>
   <data name="Item1Subtitle" xml:space="preserve">
     <value>Subtítulo de elemento: 1</value>
@@ -239,26 +239,26 @@ Busque estudios con fínale abierto en independientes, aprendizaje basado en pro
   </data>
   <data name="Section1DescriptionText.Text" xml:space="preserve">
     <value>
-Estrategias de aprendizaje:
-
 1. Céntrese en los objetivos de aprendizaje de la clase
+
 2. Busque oportunidades para trabajar con, manipular y captar material nuevo
-3. Uso de ayudas visuales o marcadores en lugar de pasos secuenciales verbales</value>
+
+3. Use de ayudas visuales o marcadores en lugar de pasos secuenciales verbales</value>
   </data>
   <data name="Section1Header.Header" xml:space="preserve">
-    <value>Aprende mejor</value>
+    <value />
   </data>
   <data name="Section1Subtitle.Text" xml:space="preserve">
     <value>Tips para tu estilo de aprendizaje</value>
   </data>
   <data name="Section2Header.Header" xml:space="preserve">
-    <value>Perfil de aprendizaje</value>
+    <value />
   </data>
   <data name="Section3Header.Header" xml:space="preserve">
     <value>Apuntes</value>
   </data>
   <data name="Section3Subtitle.Text" xml:space="preserve">
-    <value>Section subtitle</value>
+    <value>Apunte destacado</value>
   </data>
   <data name="Section4Header.Header" xml:space="preserve">
     <value>Sección 4</value>
@@ -288,6 +288,6 @@ Estrategias de aprendizaje:
     <value>Filosofía</value>
   </data>
   <data name="Ramo6" xml:space="preserve">
-    <value>Religión</value>
+    <value />
   </data>
 </root>

@@ -117,5 +117,15 @@ namespace trustudy_2014
             await SuspensionManager.SaveAsync();
             deferral.Complete();
         }
+
+        /// <summary>
+        /// Se invoca al activar la aplicación para mostrar un selector para abrir archivos.
+        /// </summary>
+        /// <param name="e">Detalles sobre la solicitud de activación.</param>
+        protected override void OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs e)
+        {
+            var fileOpenPickerPage = new trustudy_2014.FileOpenPickerPage1();
+            fileOpenPickerPage.Activate(e);
+        }
     }
 }

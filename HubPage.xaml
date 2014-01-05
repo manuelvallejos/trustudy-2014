@@ -62,27 +62,44 @@
                     <Image Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="35" Margin="45,0,-165,0" VerticalAlignment="Top" Width="200" Source="Assets/logo.jpg" Stretch="Fill" IsHitTestVisible="False"/>
                 </Grid>
             </Hub.Header>
-            <HubSection Width="700" Header="Perfil de aprendizaje">
+            <HubSection Width="700">
                 <DataTemplate>
-                    <Grid Width="625">
+                    <Grid Width="625" Height="575">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="500"/>
                         </Grid.RowDefinitions>
-                        <Image HorizontalAlignment="Left" Height="100" Margin="60,87,0,0" VerticalAlignment="Top" Width="100" Source="Assets/photo.jpg" RenderTransformOrigin="0.3,0.55"/>
-                        <Image HorizontalAlignment="Left" Margin="372,52,0,0" VerticalAlignment="Top" Source="Assets/auditivo.png" Width="76" Height="76"/>
-                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="448,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-                        <Image HorizontalAlignment="Left" Margin="448,52,0,0" VerticalAlignment="Top" Source="Assets/visual.png" Width="76" Height="76" RequestedTheme="Light"/>
-                        <Image HorizontalAlignment="Left" Margin="524,55,0,0" VerticalAlignment="Top" Source="Assets/kinestesico.png" Width="76" Height="76"/>
-                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="372,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="524,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="60,55,0,0" TextWrapping="Wrap" Text="Manuel " VerticalAlignment="Top" Height="27" Width="100" FontSize="20" TextAlignment="Center"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="190,55,0,0" TextWrapping="Wrap" Text="Según nuestros últimos registros tu estilo de aprendizaje es" VerticalAlignment="Top" Height="107" Width="150" FontSize="20" TextAlignment="Justify" Foreground="#B2000000"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="453,133,0,0" TextWrapping="Wrap" Text="Visual" VerticalAlignment="Top" Height="27" Width="71" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
-                        <Image HorizontalAlignment="Left" Margin="372,160,0,0" VerticalAlignment="Top" Source="Assets/sistematico.png" Width="76" Height="76"/>
-                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="448,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-                        <Image HorizontalAlignment="Left" Margin="448,161,0,0" VerticalAlignment="Top" Source="Assets/creativo.png" Width="76" Height="76" RequestedTheme="Light" Stretch="Fill"/>
-                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="372,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="448,239,0,0" TextWrapping="Wrap" Text="Creativo" VerticalAlignment="Top" Height="27" Width="76" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
+                        <Image HorizontalAlignment="Left" Height="150" Margin="70,52,0,0" VerticalAlignment="Top" Width="150" Source="Assets/photo.jpg" RenderTransformOrigin="0.3,0.55"/>
+                        <Image HorizontalAlignment="Left" Margin="372,162,0,0" VerticalAlignment="Top" Source="Assets/auditivo.png" Width="76" Height="76"/>
+                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="448,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Image HorizontalAlignment="Left" Margin="448,162,0,0" VerticalAlignment="Top" Source="Assets/visual.png" Width="76" Height="76" RequestedTheme="Light"/>
+                        <Image HorizontalAlignment="Left" Margin="524,165,0,0" VerticalAlignment="Top" Source="Assets/kinestesico.png" Width="76" Height="76"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="372,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="524,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="70,10,0,0" TextWrapping="Wrap" Text="¡Hola Manuel!" VerticalAlignment="Top" Height="27" Width="150" FontSize="22" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="70,227,0,0" TextWrapping="Wrap" Text="Tu actual estilo de aprendizaje es" VerticalAlignment="Top" Height="116" Width="190" FontSize="30" Foreground="#B2000000"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="453,243,0,0" TextWrapping="Wrap" Text="Visual" VerticalAlignment="Top" Height="27" Width="71" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
+                        <Image HorizontalAlignment="Left" Margin="448,56,0,0" VerticalAlignment="Top" Source="Assets/sistematico.png" Width="76" Height="76"/>
+                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="524,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Image HorizontalAlignment="Left" Margin="524,57,0,0" VerticalAlignment="Top" Source="Assets/creativo.png" Width="76" Height="76" RequestedTheme="Light" Stretch="Fill"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="448,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="524,135,0,0" TextWrapping="Wrap" Text="Creativo" VerticalAlignment="Top" Height="27" Width="76" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
+                        <Image HorizontalAlignment="Left" Margin="372,267,0,0" VerticalAlignment="Top" Source="Assets/organizador.png" Width="76" Height="76"/>
+                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="76" Margin="524,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Image HorizontalAlignment="Left" Margin="448,272,0,0" VerticalAlignment="Top" Source="Assets/comunicador.png" Width="76" Height="76"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="372,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="448,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="515,348,0,0" TextWrapping="Wrap" Text="Estratega" VerticalAlignment="Top" Height="27" Width="85" FontSize="20" Foreground="#B2000000" TextAlignment="Center"/>
+                        <Rectangle HorizontalAlignment="Left" Height="76" Margin="296,270,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
+                        <Image HorizontalAlignment="Left" Margin="296,271,0,0" VerticalAlignment="Top" Source="Assets/experto.png" Width="76" Height="76" RequestedTheme="Light"/>
+                        <Button Content="Subir" HorizontalAlignment="Left" Margin="348,0,0,-56" VerticalAlignment="Bottom" Height="110" Width="250" Background="#FF953735" Foreground="White" FontSize="35" Padding="12,4,70,4" />
+                        <Rectangle Fill="#FF953735" HorizontalAlignment="Left" Height="5" Margin="70,385,0,0" Stroke="Black" VerticalAlignment="Top" Width="530"/>
+                        <TextBox HorizontalAlignment="Left" Margin="185,464,0,-39" TextWrapping="Wrap" Text="90" VerticalAlignment="Center" Height="75" Width="75" TextAlignment="Center" FontSize="40"/>
+                        <TextBox HorizontalAlignment="Left" Margin="75,464,0,-39" TextWrapping="Wrap" Text="15" VerticalAlignment="Center" Height="75" Width="75" TextAlignment="Center" FontSize="40"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="75,405,0,0" TextWrapping="Wrap" Text="Apuntes" VerticalAlignment="Top" FontSize="35"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="75,544,0,-68" TextWrapping="Wrap" Text="Subidos" VerticalAlignment="Top" FontSize="20"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="195,544,0,-68" TextWrapping="Wrap" Text="Sigues" VerticalAlignment="Top" FontSize="20"/>
+                        <Image HorizontalAlignment="Left" Margin="524,271,0,0" VerticalAlignment="Top" Source="Assets/estratega.png" Width="76" Height="76" RequestedTheme="Light"/>
+                        <Image HorizontalAlignment="Left" Margin="490,464,0,-40" VerticalAlignment="Top" Source="Assets/file.png" Width="76" Height="76" RequestedTheme="Light" RenderTransformOrigin="2.355,0.789"/>
                     </Grid>
                 </DataTemplate>
             </HubSection>
@@ -103,7 +120,7 @@
                     </GridView>
                 </DataTemplate>
             </HubSection>
-            <HubSection Width="500" x:Uid="Section1Header" Header="Blog" Background="#FF953735">
+            <HubSection Width="500" x:Uid="Section1Header" Header="" Background="#FF953735">
                 <DataTemplate>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -112,19 +129,17 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <Image Source="Assets/CAMPUS1450.jpg" Stretch="Fill" Width="420" Height="280"/>
+                        <Image Source="Assets/chato.jpg" Stretch="Fill" Width="420" Height="280"/>
                         <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1" Margin="0,10,0,0" TextWrapping="Wrap"  
-                                   x:Uid="Section1Subtitle" Text="Tips para el aprendizaje visual espacial"/>
-                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Grid.Row="2" Margin="0,10,0,0" 
-                                   x:Uid="DescriptionHeader" Text=""/>
+                                   x:Uid="Section1Subtitle" Text="Tips para el aprendizaje visual espacial" Foreground="#E5FFFFFF"/>
                         <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3"
-                                   x:Uid="Section1DescriptionText" Text="El aprender, para los estudiantes visuales-espaciales, se lleva a cabo de un solo tirón, con grandes trozos de información comprendidas intuitivamente de a saltos, en lugar de una gradual acumulación de hechos aislados, pequeños pasos o hábitos estructurados ganados a través de la práctica. Por ejemplo, ellos pueden aprender todo acerca de los pasos de la multiplicación, como un juego relacionado en una tabla mucho más fácil y rápido que memorizando cada paso independientemente."/>
+                                   x:Uid="Section1DescriptionText" Text="El aprender, para los estudiantes visuales-espaciales, se lleva a cabo de un solo tirón, con grandes trozos de información comprendidas intuitivamente de a saltos, en lugar de una gradual acumulación de hechos aislados, pequeños pasos o hábitos estructurados ganados a través de la práctica. Por ejemplo, ellos pueden aprender todo acerca de los pasos de la multiplicación, como un juego relacionado en una tabla mucho más fácil y rápido que memorizando cada paso independientemente." Foreground="#CCFFFFFF"/>
                     </Grid>
                 </DataTemplate>
             </HubSection>
 
         </Hub>
-        <TextBox x:Name="buscar" HorizontalAlignment="Left" Margin="1072,63,0,0" TextWrapping="Wrap" Text="Especifica un curso o autor" VerticalAlignment="Top" Width="248" Tapped="TextBox_Tapped"/>
+        <TextBox x:Name="buscar" HorizontalAlignment="Left" Margin="1072,63,0,0" TextWrapping="Wrap" Text="Especifica un curso o autor" VerticalAlignment="Top" Width="248" Tapped="TextBox_Tapped" Foreground="#CC000000"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="1270,53,0,0" VerticalAlignment="Top" Width="50" Source="Assets/buscar.png"/>
     </Grid>
 </Page>

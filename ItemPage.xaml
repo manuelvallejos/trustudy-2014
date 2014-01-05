@@ -33,10 +33,14 @@
             TODO: Debe colocarse el contenido en la siguiente cuadrícula 
                   para mostrar detalles del elemento actual
         -->
-        <Grid Grid.Row="1" x:Name="contentRegion"/>
+        <Grid Grid.Row="1" x:Name="contentRegion">
+            <Image HorizontalAlignment="Left" Height="1425" Margin="535,-90,0,-707" VerticalAlignment="Top" Width="735" Source="Assets/variable-aleatoria.png"/>
+            <Image HorizontalAlignment="Left" Height="145" Margin="105,50,0,0" VerticalAlignment="Top" Width="145" Source="Assets/daniel.jpg"/>
+            <TextBlock HorizontalAlignment="Left" Margin="282,159,0,0" TextWrapping="Wrap" Text="Daniel Mendez" VerticalAlignment="Top" FontSize="30"/>
+        </Grid>
 
         <!-- Botón Atrás y título de página -->
-        <Grid>
+        <Grid RequestedTheme="Light">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>

@@ -144,6 +144,8 @@
     <Content Include="Assets\creativo.png" />
     <Content Include="Assets\sistematico.png" />
     <Content Include="Assets\kinestesico.png" />
+    <Content Include="Assets\SplashScreen White 150.png" />
+    <Content Include="Assets\SplashScreen White.png" />
     <Content Include="Assets\visual.png" />
     <Content Include="Assets\auditivo.png" />
     <Content Include="Assets\calculo.jpg" />
